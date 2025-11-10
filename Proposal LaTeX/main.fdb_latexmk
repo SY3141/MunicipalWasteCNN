@@ -1,19 +1,20 @@
 # Fdb version 4
-["bibtex main"] 1762744944.43662 "main.aux" "main.bbl" "main" 1762745141.76155 0
+["bibtex main"] 1762803365.17289 "main.aux" "main.bbl" "main" 1762803424.5509 0
   "./acl_natbib.bst" 1762646304 45186 3d1af46d62cc9172ef6e42b56c1cd613 ""
   "./custom.bib" 1762646304 2071 0b966569afb5acbb6dca5a75fec7e92c ""
-  "main.aux" 1762745140 3182 0ee2e7b362fb118e804a274350e1b839 "pdflatex"
+  "main.aux" 1762803423 3182 74e671bc80606eed8769a82492cc086a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1762745139.88672 "c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/MunicipalWasteCNN/Proposal LaTeX/main.tex" "main.pdf" "main" 1762745141.76248 0
+["pdflatex"] 1762803422.74007 "c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/MunicipalWasteCNN/Proposal LaTeX/main.tex" "main.pdf" "main" 1762803424.55156 0
   "C:/Users/sunny/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762646733 96176 40a8022d15c5925d7081b1ad66e03248 ""
   "C:/Users/sunny/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758150870 24225046 44b851538e2a3c6ae8d277662697c740 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-0.enc" 1557959318 7631 5169ff1acd97ff1c4ab83563c99f96f4 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmb8r.tfm" 1136790254 4524 6bce29db5bc272ba5f332261583fee9c ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmb8t.tfm" 1136790254 6880 f19b8995b61c334d78fc734065f6b4d4 ""
+  "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmr8c.tfm" 1136790254 1352 fa28a7e6d323c65ce7d13d5342ff6be2 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmr8r.tfm" 1136790254 4408 25b74d011a4c66b7f212c0cc3c90061b ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmr8t.tfm" 1136790254 6672 e3ab9e37e925f3045c9005e6d1473d56 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmri8r.tfm" 1136790254 4640 532ca3305aad10cc01d769f3f91f1029 ""
@@ -44,6 +45,7 @@
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb" 1136871348 46026 687528a208fbfc1f00832bb96cccebbb ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb" 1136871348 45458 504e2b06fa82109d168c7a0afb09e145 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/vf/adobe/times/ptmb8t.vf" 1136790254 2340 df9c920cc5688ebbf16a93f45ce7bdd3 ""
+  "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/vf/adobe/times/ptmr8c.vf" 1136790254 3556 8a9a6dcbcd146ef985683f677f4758a6 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/vf/adobe/times/ptmr8t.vf" 1136790254 2348 91706c542228501c410c266421fbe30c ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/vf/adobe/times/ptmri8t.vf" 1136790254 2328 6cd7df782b09b29cfc4d93e55b6b9a59 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -115,6 +117,7 @@
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/natbib/natbib.sty" 1292249081 46712 1c8843383c0bd05870c45fa0ebea6cc2 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1ptm.fd" 1585253778 817 61d7da1e9f9e74989b196d147e623736 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/times.sty" 1585926771 888 8e0e5c8cca7b18e0400f97f5a2b90a99 ""
+  "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ts1ptm.fd" 1585253778 653 96f56dc5d1ef1fe1121f1cfeec70ee0c ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/upquote/upquote.sty" 1335534756 1088 517e01cde97c1c0baf72e69d43aa5a2e ""
@@ -122,11 +125,11 @@
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "acl.sty" 1762646304 11615 e2c027f483aa40e577ed34264c8b0655 ""
-  "c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/MunicipalWasteCNN/Proposal LaTeX/main.tex" 1762745139 10798 ca46408476a361fcbc739bc1f8efbbfa ""
-  "main.aux" 1762745140 3182 0ee2e7b362fb118e804a274350e1b839 "pdflatex"
-  "main.bbl" 1762744944 1113 27ce20dbe7f48c6ffaac33d562c0dc66 "bibtex main"
-  "main.out" 1762745140 1364 34dec0e26ed0d2bc1a332fda77e8d570 "pdflatex"
-  "main.tex" 1762745139 10798 ca46408476a361fcbc739bc1f8efbbfa ""
+  "c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/MunicipalWasteCNN/Proposal LaTeX/main.tex" 1762803422 17679 08f6f34836e77eddacc2621916574fe3 ""
+  "main.aux" 1762803423 3182 74e671bc80606eed8769a82492cc086a "pdflatex"
+  "main.bbl" 1762803365 1113 27ce20dbe7f48c6ffaac33d562c0dc66 "bibtex main"
+  "main.out" 1762803423 1364 34dec0e26ed0d2bc1a332fda77e8d570 "pdflatex"
+  "main.tex" 1762803422 17679 08f6f34836e77eddacc2621916574fe3 ""
   (generated)
   "main.aux"
   "main.log"
