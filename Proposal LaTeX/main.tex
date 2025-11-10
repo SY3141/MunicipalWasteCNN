@@ -27,7 +27,7 @@
 \title{Group 14 Progress Report:\\Municipal Waste Image Classifier}
 
 
-\author{Sunny Yao, Second Author, Third Author \\
+\author{Sunny Yao, Aswin Kuganesan, Third Author \\
   \texttt{\{yaoh24,macid2,macid3\}@mcmaster.ca} }
 
 %\author{
@@ -116,10 +116,35 @@ Here, talk about the related work you encountered for your approach. Cite at lea
 
 \section{Dataset}
 
-You should write about your dataset here, following the guidelines regarding item 1. This section may be 0.5-1 pages. Depending on your specific dataset, you may want to include subsections for the preprocessing, annotation, etc.
+The dataset used is the Garbage Images Dataset from Kaggle. 
+The dataset contains different types of garbage in folders, 
+which allows the model to get trained on the different 
+types of waste. The dataset is separated into cardboard, 
+glass, metal, paper, plastic and trash. Several preprocessing 
+operations were employed, which involved traversing each 
+subfolder in the GarbageDataset class and collecting the paths 
+for all images along with their corresponding class labels. 
+
+A list of tuples was created to store the path and label 
+for all images that had a valid image format of jpg, jpeg 
+or png, and the images were all loaded in RGB format. 
+Using PyTorch's torchvision library, the transforms module 
+resized the images to 224 by 224, which is ideal for 
+image processing for the neural network while also 
+maintaining image quality. 
+
+The transforms module also converted the images to a 
+tensor, which normalizes the images to a [0.0, 1.0] 
+range. One percent of the dataset is then used using 
+an 80 percent training and 20 percent testing split, 
+since one percent of the dataset is sufficient. The 
+dataset was already annotated since the folders included 
+the garbage type, so matching the images to their class 
+label did not require any manual annotation. Each garbage 
+type was assigned to an integer value, which was mapped 
+to each image path.
 
 \section{Features}
-
 The dataset used in this project consists of labeled 
 images of municipal waste categorized into classes such 
 as plastic, paper, glass, metal, and organic waste. Each 
@@ -160,7 +185,25 @@ Describe your model and implementation here. Refer to item 4. This may take arou
 
 \section{Results and Evaluation}
 
-How are you evaluating your model? What results do you have so far? What are your baselines? Refer to item 5. This may take around 0.5 pages.
+The dataset was divided using an 80/20 split, with 80 percent 
+being used for training and 20 percent being used for 
+testing. One percent of the dataset was used, and the model 
+was trained for 15 epochs using cross-entropy loss to determine 
+the difference between the predicted class and the true label. 
+
+Using this methodology, the training loss for the first epoch 
+was 1.57, and the accuracy was 57.03 percent. The testing loss 
+was 0.22 for the first epoch, and the accuracy was 100 percent. 
+However, in the second epoch and afterwards, the training loss 
+and testing loss are 0, and the training and testing accuracy 
+are 100 percent. 
+
+Although this demonstrates that the model is able to classify 
+the waste properly, this also demonstrates that the model is 
+overfitting to the dataset. The baseline is the neural network 
+trained on the garbage dataset, which should be adjusted to 
+account for overfitting, and the baseline performance is 100 
+percent, which is high due to overfitting.  
 
 \section{Feedback and Plans}
 
