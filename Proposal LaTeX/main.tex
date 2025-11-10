@@ -75,7 +75,40 @@
 
 \section{Introduction}
 
-Here, write a brief introduction to the problem you are solving. This can be adapted from your problem description and motivation from the original proposal. This should be around 0.25-0.5 pages.
+\hspace*{1em} The rapid increase in municipal solid waste has become a 
+major global issue, contributing to landfill overflow, 
+environmental pollution, and the depletion of natural 
+resources. Effective waste management plays a vital role 
+in addressing these challenges by promoting recycling, 
+conserving resources, and reducing the overall 
+environmental footprint. However, traditional methods 
+of waste sorting are often manual, time-consuming, and 
+error-prone, limiting the efficiency and scalability of 
+recycling systems.
+
+This report presents the development of a Municipal Waste 
+Image Classification system that applies deep learning 
+techniques to automate the identification and 
+categorization of waste materials. The system is designed 
+to classify common waste types such as plastic, paper, 
+glass, metal, and organic matter based on image data. 
+By automating the classification process, the project 
+aims to improve recycling efficiency, streamline waste 
+management operations, and support environmental 
+sustainability efforts.
+
+The main challenge of this project lies in the 
+variability and complexity of real-world waste images. 
+Factors such as lighting conditions, object overlap, 
+background noise, and material degradation can make 
+accurate classification difficult. Overcoming these 
+challenges requires the use of robust machine learning 
+models capable of handling diverse input data while 
+maintaining high accuracy and efficiency. The success 
+of this project would demonstrate the potential of 
+artificial intelligence to transform waste management 
+practices and contribute to the creation of more 
+sustainable and environmentally responsible cities.
 
 \section{Related Work}
 
@@ -87,8 +120,40 @@ You should write about your dataset here, following the guidelines regarding ite
 
 \section{Features}
 
-Describe any features you used for your model, or how your data was input to your model. Are you doing feature engineering or feature selection? Are you learning embeddings? Is it all part of one neural network? Refer to item 2. This may range from 0.25 pages to 0.5 pages.
+The dataset used in this project consists of labeled 
+images of municipal waste categorized into classes such 
+as plastic, paper, glass, metal, and organic waste. Each 
+image is organized within a directory structure, where 
+each subfolder represents one waste category. A custom 
+GarbageDataset class was developed to efficiently load 
+the data by reading image paths and their corresponding 
+labels, returning (image, label) pairs suitable for use 
+in PyTorch data loaders.
 
+Before being fed into the model, all images undergo a 
+series of preprocessing steps using 
+torchvision.transforms. These include resizing the 
+images to a uniform size, converting them into tensors, 
+and normalizing pixel values to ensure consistent scale 
+and distribution across the dataset. This preprocessing 
+helps improve training stability and ensures that the 
+model can handle variations in lighting, background, 
+and image quality.
+
+The model itself is a Convolutional Neural Network, 
+which is particularly well-suited for image 
+classification tasks. Unlike traditional approaches 
+that rely on manual feature engineering, the CNN 
+automatically learns to extract hierarchical visual 
+features directly from raw image data. Early 
+convolutional layers capture low-level features such as 
+edges, colors, and textures, while deeper layers identify 
+higher-level patterns like shapes and object structures. 
+The network then uses these learned embeddings to 
+classify each image into its corresponding waste 
+category.
+
+All feature extraction and classification are performed within this single end-to-end neural network pipeline. By leveraging the CNN’s ability to learn rich spatial representations, the system avoids manual feature selection and instead learns robust, generalizable features directly from data. This approach enhances classification accuracy and makes the model more adaptable to real-world waste sorting applications, where visual variability is common.
 \section{Implementation}
 
 Describe your model and implementation here. Refer to item 4. This may take around a page.
@@ -99,7 +164,12 @@ How are you evaluating your model? What results do you have so far? What are you
 
 \section{Feedback and Plans}
 
-Write about your plans for the remainder of the project. This should include a discussion of the feedback you received from your TA, and how you plan to improve your approach. Reflect on your implementation and areas for improvement. Refer to item 6. This may be around 0.5 pages.
+For the remainder of the project, our primary focus will 
+be on improving the accuracy, robustness, and 
+generalization ability of our CNN-based waste 
+classification model. We will also explore other CNN
+based models to look at their techniques and see if we can
+incorporate them into our own model.
 
 \section{Template Notes}
 

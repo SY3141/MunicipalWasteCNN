@@ -1,6 +1,6 @@
-PWD c:\Users\sunny\OneDrive\OneDrive Desktop\Year4\4AL3\Project Progress Report\Proposal LaTeX
+PWD c:\Users\sunny\OneDrive\OneDrive Desktop\Year4\4AL3\MunicipalWasteCNN\Proposal LaTeX
 INPUT C:\Users\sunny\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\sunny\OneDrive\OneDrive Desktop\Year4\4AL3\Project Progress Report\Proposal LaTeX\main.tex
+INPUT c:\Users\sunny\OneDrive\OneDrive Desktop\Year4\4AL3\MunicipalWasteCNN\Proposal LaTeX\main.tex
 OUTPUT main.log
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -186,6 +186,15 @@ INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\tex\latex\inconsolata\t1zi4.f
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\tex\latex\inconsolata\t1zi4.fd
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\tex\latex\inconsolata\t1zi4.fd
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\public\inconsolata\t1-zi4r-0.tfm
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\sunny\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\inconsolata\i4-t1-0.enc
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image-golden.tex
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image-golden.tex
@@ -214,24 +223,15 @@ INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tf
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\public\inconsolata\t1-zi4r-0.tfm
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Users\sunny\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\inconsolata\i4-t1-0.enc
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\sunny\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf

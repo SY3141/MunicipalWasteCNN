@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.17)  9 NOV 2025 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.17)  9 NOV 2025 22:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/Project Progress Report/Proposal LaTeX/main.tex"
-(c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/Project Progress Report/Proposal LaTeX/main.tex
+**"c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/MunicipalWasteCNN/Proposal LaTeX/main.tex"
+(c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/MunicipalWasteCNN/Proposal LaTeX/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\sunny\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -397,32 +397,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<example-image-golden.pdf, id=53, 324.82053pt x 200.75pt>
-File: example-image-golden.pdf Graphic file (type pdf)
-<use example-image-golden.pdf>
-Package pdftex.def Info: example-image-golden.pdf  used on input line 115.
-(pdftex.def)             Requested size: 219.08614pt x 135.40543pt.
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 118.
-<example-image-a.pdf, id=54, 321.2pt x 240.9pt>
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 123.
-(pdftex.def)             Requested size: 218.51521pt x 163.89069pt.
-<example-image-b.pdf, id=55, 321.2pt x 240.9pt>
-File: example-image-b.pdf Graphic file (type pdf)
-<use example-image-b.pdf>
-Package pdftex.def Info: example-image-b.pdf  used on input line 124.
-(pdftex.def)             Requested size: 218.51521pt x 163.89069pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 134.
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.95pt on input line 138.
  [1{C:/Users/sunny/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-0.enc}
 
 
 
- <C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image-golden.pdf>] (main.bbl) [2 <C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image-a.pdf> <C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image-b.pdf>] (main.aux)
+]
+<example-image-golden.pdf, id=61, 324.82053pt x 200.75pt>
+File: example-image-golden.pdf Graphic file (type pdf)
+<use example-image-golden.pdf>
+Package pdftex.def Info: example-image-golden.pdf  used on input line 185.
+(pdftex.def)             Requested size: 219.08614pt x 135.40543pt.
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 10.0pt on input line 188.
+<example-image-a.pdf, id=62, 321.2pt x 240.9pt>
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Package pdftex.def Info: example-image-a.pdf  used on input line 193.
+(pdftex.def)             Requested size: 218.51521pt x 163.89069pt.
+<example-image-b.pdf, id=63, 321.2pt x 240.9pt>
+File: example-image-b.pdf Graphic file (type pdf)
+<use example-image-b.pdf>
+Package pdftex.def Info: example-image-b.pdf  used on input line 194.
+(pdftex.def)             Requested size: 218.51521pt x 163.89069pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 204.
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 10.95pt on input line 208.
+ (main.bbl [2 <C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image-golden.pdf>]) [3
+
+ <C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image-a.pdf> <C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image-b.pdf>] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -431,17 +434,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 34DEC0E26ED0D2BC1A332FDA77E8D570;1364.
  ) 
 Here is how much of TeX's memory you used:
- 13953 strings out of 474486
- 228304 string characters out of 5743755
+ 13990 strings out of 474486
+ 228553 string characters out of 5743755
  1943542 words of memory out of 5000000
  35895 multiletter control sequences out of 15000+600000
- 592024 words of font info for 157 fonts, out of 8000000 for 9000
+ 593584 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,10n,93p,1094b,486s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,10n,93p,1088b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 150196 bytes).
+Output written on main.pdf (3 pages, 154309 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
  36464 words of extra memory for PDF output out of 42996 (max. 10000000)
 
