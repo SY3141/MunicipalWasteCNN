@@ -1,24 +1,30 @@
 \begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 
-\bibitem[{Alqahtani et~al.(2022)Alqahtani, Hossain, and Muhammad}]{alqahtani2022}
+\bibitem[{Alqahtani et~al.(2022)Alqahtani, Hossain, and
+  Muhammad}]{alqahtani2022}
 H.~Alqahtani, M.~S. Hossain, and G.~Muhammad. 2022.
-\newblock Deep learning-based intelligent waste classification system for smart cities.
+\newblock Deep learning-based intelligent waste classification system for smart
+  cities.
 \newblock \emph{Sustainable Cities and Society}, 80:103753.
 
 \bibitem[{Awe et~al.(2020)Awe, Mengistu, and Ezema}]{awe2020}
 O.~Awe, S.~Mengistu, and C.~Ezema. 2020.
-\newblock An ensemble convolutional neural network approach for waste classification.
-\newblock In \emph{Proc. Int. Conf. Comput. Sci. Comput. Intell. (CSCI)}, pages 295--300.
+\newblock An ensemble convolutional neural network approach for waste
+  classification.
+\newblock In \emph{Proc. Int. Conf. Comput. Sci. Comput. Intell. (CSCI)}, pages
+  295--300.
 
 \bibitem[{Kumar et~al.(2021)Kumar, Singh, and Verma}]{kumar2021}
 R.~Kumar, A.~Singh, and P.~Verma. 2021.
-\newblock Lightweight CNN model for real-time waste classification on edge devices.
+\newblock Lightweight cnn model for real-time waste classification on edge
+  devices.
 \newblock \emph{IEEE Internet of Things Journal}, 8(14):11572--11580.
 
 \bibitem[{Wang et~al.(2019)Wang, Zhang, and Li}]{wang2019}
 W.~Wang, Y.~Zhang, and X.~Li. 2019.
-\newblock Deep learning-based waste classification using transfer learning with VGG16 and ResNet50.
+\newblock Deep learning-based waste classification using transfer learning with
+  vgg16 and resnet50.
 \newblock \emph{IEEE Access}, 7:178966--178975.
 
 \bibitem[{Yang and Thung(2016)}]{yang2016}

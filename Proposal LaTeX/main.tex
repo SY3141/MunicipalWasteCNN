@@ -5,6 +5,7 @@
 \usepackage[]{acl}
 \usepackage{times}
 \usepackage{latexsym}
+\usepackage{graphicx}
 
 % For proper rendering and hyphenation of words containing Latin characters (including in bib files)
 \usepackage[T1]{fontenc}
@@ -99,16 +100,16 @@ sustainability efforts.
 
 The main challenge of this project lies in the 
 variability and complexity of real-world waste images. 
-Factors such as lighting conditions, object overlap, 
-background noise, and material degradation can make 
-accurate classification difficult. Overcoming these 
-challenges requires the use of robust machine learning 
-models capable of handling diverse input data while 
-maintaining high accuracy and efficiency. The success 
-of this project would demonstrate the potential of 
-artificial intelligence to transform waste management 
-practices and contribute to the creation of more 
-sustainable and environmentally responsible cities.
+Factors such as lighting conditions,
+background noise, and material degradation make accurate 
+classification difficult. Overcoming these challenges 
+requires robust machine learning models capable of 
+handling diverse input data while maintaining high 
+accuracy and efficiency. The success of this project 
+would demonstrate the potential of artificial 
+intelligence to transform waste management and 
+support more sustainable, environmentally responsible 
+cities.
 
 \section{Related Work}
 
@@ -277,12 +278,25 @@ the ideal learning rate is. Due to the size of the dataset and
 the simplicity of the model, the runtime to train and test the 
 model was long. 
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{loss_epochs_fig.png}
+    \caption{Model loss over 30 epochs for training and testing datasets}
+    \label{fig:loss_figure} %label for referencing in text
+\end{figure}
+
 Using this methodology, the training loss for the first epoch 
 was 1.25839, and the accuracy was 52.17 percent. The testing loss 
 was 1.18205 for the first epoch, and the accuracy was 54.86 percent. 
 This demonstrated that the model in the first epoch worked fairly 
 well at determining the garbage type, but there was still a lot of 
 room for improvement. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{confusion_matrix.png}
+    \caption{Confusion matrix for the model with 5 categories of waste}
+    \label{fig:confusion_figure} %label for referencing in text
+\end{figure}
 
 As we continued to train the model and as the number of epochs 
 increased, the training and testing loss decreased, and the 
@@ -293,12 +307,18 @@ and the accuracy values were reasonable. By epoch 30, the training
 loss was 0.69006, and the training accuracy was 75.65 percent. The 
 testing loss was 0.92142, and the testing accuracy was 70.60 percent.
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{epochs_fig.png}
+    \caption{Accuracy over 30 epochs for training and testing datasets}
+    \label{fig:accuracy_figure} %label for referencing in text
+\end{figure}
+
 This demonstrates that the model is able to classify the waste 
 fairly accurately, but also demonstrates that the model can still 
 improve. This is because the model will fail to classify images 
 approximately 30 percent of the time. This model is a great baseline 
-for future models, since small changes can be made to this model to 
-improve its accuracy, such as adjusting the architecture and changing 
+for future models. Future changes can include adjusting the architecture and changing 
 the hyperparameters. Using the baseline accuracy of 70 percent, we can 
 also try different architectures and choose to implement architectures 
 that surpass the 70 percent accuracy threshold.  
@@ -308,10 +328,18 @@ that surpass the 70 percent accuracy threshold.
 For the remainder of the project, our primary focus will 
 be on improving the accuracy, robustness, and 
 generalization ability of our CNN-based waste 
-classification model. We will also explore other CNN
-based models to look at their techniques and see if we can
-incorporate them into our own model.
-
+classification model. Based on the TA's feedback, we 
+will enhance our report by including a framework graph 
+of the CNN architecture to better illustrate our model 
+design. Additionally, we plan to perform feature 
+visualizations to analyze what the CNN has learned and 
+determine whether it is capturing meaningful patterns 
+from the input data. We will also expand our experimental 
+results by including metrics such as training and 
+validation loss, accuracy curves, and other performance 
+comparisons. Furthermore, we will explore other CNN-based 
+models to study their techniques and determine if any can 
+be incorporated into our approach.
 
 
 \section*{Team Contributions}
@@ -319,6 +347,10 @@ incorporate them into our own model.
 Yousef Shahin: Completed section 2, 5, references, and created the initial model
 
 Aswin Kuganesan: Complete sections 3, 6, citations and equations
+
+Sunny Yao: Completed sections 1, 4, 7, created the confusion matrix generalization
+and randomized sampling.
+
 % Bibliography entries for the entire Anthology, followed by custom entries
 %\bibliography{custom,anthology-overleaf-1,anthology-overleaf-2}
 
