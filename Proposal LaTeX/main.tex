@@ -112,11 +112,20 @@ sustainable and environmentally responsible cities.
 
 \section{Related Work}
 
-Image classification for waste management has gained significant attention in recent research, with Convolutional Neural Networks (CNNs) proving particularly effective due to their ability to automatically learn hierarchical feature representations from image data.
-Wang et al. (2019) developed a waste classification system using transfer learning with pre-trained models like VGG16 and ResNet50, achieving over 90\% accuracy on multi-class waste datasets. Their work demonstrated the effectiveness of deep features for distinguishing between waste categories including plastic, paper, and metal.
-Yang and Thung (2016) created one of the first comprehensive waste classification datasets and implemented a custom CNN architecture for six waste categories similar to our work. They reported challenges with distinguishing visually similar materials and emphasized the importance of data augmentation and proper preprocessing.
-Awe et al. (2020) proposed an ensemble approach combining multiple CNN architectures, highlighting the difficulty in classifying categories that share visual similarities, such as different types of plastics or metal objects. Kumar et al. (2021) investigated lightweight CNN architectures for edge device deployment, balancing model complexity with inference speed for practical real-time sorting applications.
-Our approach builds upon these works by implementing a custom CNN architecture with progressive feature extraction through multiple convolutional blocks, incorporating global average pooling to reduce overfitting, and utilizing dropout for regularization. While our dataset is currently limited in size, the model architecture follows proven design principles from the literature while being optimized for the six-category waste classification task.
+Image classification for waste management has gained significant attention in recent years, with various studies leveraging deep learning architectures to improve recycling efficiency. Convolutional Neural Networks (CNNs) have proven especially effective for this task due to their ability to automatically learn hierarchical feature representations from raw image data.
+
+Several studies have demonstrated the potential of CNNs for automated waste sorting. \citet{wang2019} developed a deep learning-based waste classification system using transfer learning with pre-trained models such as VGG16 and ResNet50, achieving accuracies exceeding 90\% on a multi-class dataset. Their work showed that fine-tuning deep architectures on domain-specific waste imagery can substantially enhance performance across diverse material types including plastic, paper, and metal.
+
+Earlier, \citet{yang2016} constructed one of the first comprehensive waste image datasets, known as TrashNet, and implemented a custom CNN model for recyclability classification. They identified key challenges in differentiating visually similar materials, such as glass and plastic, and emphasized the importance of data augmentation and preprocessing for improving model robustness.
+
+Building on this foundation, \citet{awe2020} proposed an ensemble CNN approach that combines the outputs of multiple architectures to improve overall accuracy and generalization. Their ensemble method effectively mitigated misclassification between visually overlapping categories by leveraging complementary feature extraction from different models.
+
+To enhance computational efficiency, particularly for real-time applications, \citet{kumar2021} introduced a lightweight CNN model optimized for deployment on edge devices. Their framework balanced model complexity with inference speed, enabling efficient on-device waste classification without requiring high-end hardware.
+
+More recently, \citet{alqahtani2022} integrated deep learning with Internet of Things (IoT) technologies to develop an intelligent waste classification system for smart cities. Their model demonstrated the feasibility of combining AI-driven image recognition with connected infrastructure to support sustainable urban waste management.
+
+Our approach builds upon these foundational works by implementing a custom CNN architecture that progressively extracts features through multiple convolutional blocks. It incorporates global average pooling to minimize overfitting and dropout for regularization. While our dataset is currently limited in size, our model design follows proven principles from the literature and is optimized for six-category municipal waste classification.
+
 
 \section{Dataset}
 
@@ -253,81 +262,11 @@ classification model. We will also explore other CNN
 based models to look at their techniques and see if we can
 incorporate them into our own model.
 
-\section{Template Notes}
 
-\subsection{Tables and figures}
-
-See Table~\ref{citation-guide} for an example of a table and its caption.
-See Figure~\ref{fig:experiments} for an example of a figure and its caption.
-
-
-\begin{figure}[t]
-  \includegraphics[width=\columnwidth]{example-image-golden}
-  \caption{A figure with a caption that runs for more than one line.
-    Example image is usually available through the \texttt{mwe} package
-    without even mentioning it in the preamble.}
-  \label{fig:experiments}
-\end{figure}
-
-\begin{figure*}[t]
-  \includegraphics[width=0.48\linewidth]{example-image-a} \hfill
-  \includegraphics[width=0.48\linewidth]{example-image-b}
-  \caption {A minimal working example to demonstrate how to place
-    two images side-by-side.}
-\end{figure*}
-
-
-\subsection{Citations}
-
-\begin{table*}
-  \centering
-  \begin{tabular}{lll}
-    \hline
-    \textbf{Output}           & \textbf{natbib command} & \textbf{ACL only command} \\
-    \hline
-    \citep{Gusfield:97}       & \verb|\citep|           &                           \\
-    \citealp{Gusfield:97}     & \verb|\citealp|         &                           \\
-    \citet{Gusfield:97}       & \verb|\citet|           &                           \\
-    \citeyearpar{Gusfield:97} & \verb|\citeyearpar|     &                           \\
-    \citeposs{Gusfield:97}    &                         & \verb|\citeposs|          \\
-    \hline
-  \end{tabular}
-  \caption{\label{citation-guide}
-    Citation commands supported by the style file.
-  }
-\end{table*}
-
-Table~\ref{citation-guide} shows the syntax supported by the style files.
-We encourage you to use the natbib styles.
-You can use the command \verb|\citet| (cite in text) to get ``author (year)'' citations, like this citation to a paper by \citet{Gusfield:97}.
-You can use the command \verb|\citep| (cite in parentheses) to get ``(author, year)'' citations \citep{Gusfield:97}.
-You can use the command \verb|\citealp| (alternative cite without parentheses) to get ``author, year'' citations, which is useful for using citations within parentheses (e.g. \citealp{Gusfield:97}).
-
-\subsection{References}
-
-\nocite{Ando2005,andrew2007scalable,rasooli-tetrault-2015}
-
-Many websites where you can find academic papers also allow you to export a bib file for citation or bib formatted entry. Copy this into the \texttt{custom.bib} and you will be able to cite the paper in the \LaTeX{}. You can remove the example entries.
-
-\subsection{Equations}
-
-An example equation is shown below:
-\begin{equation}
-  \label{eq:example}
-  A = \pi r^2
-\end{equation}
-
-Labels for equation numbers, sections, subsections, figures and tables
-are all defined with the \verb|\label{label}| command and cross references
-to them are made with the \verb|\ref{label}| command.
-This an example cross-reference to Equation~\ref{eq:example}. You can also write equations inline, like this: $A=\pi r^2$.
-
-
-% \section*{Limitations}
 
 \section*{Team Contributions}
 
-Write in this section a few sentences describing the contributions of each team member. What did each member work on? Refer to item 7.
+Yousef Shahin: Completed section 2, 5, references, and created the initial model
 
 % Bibliography entries for the entire Anthology, followed by custom entries
 %\bibliography{custom,anthology-overleaf-1,anthology-overleaf-2}
