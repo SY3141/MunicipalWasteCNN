@@ -130,32 +130,54 @@ Our approach builds upon these foundational works by implementing a custom CNN a
 \section{Dataset}
 
 The dataset used is the Garbage Images Dataset from Kaggle. 
-The dataset contains different types of garbage in folders, 
-which allows the model to get trained on the different 
-types of waste. The dataset is separated into cardboard, 
-glass, metal, paper, plastic and trash. Several preprocessing 
-operations were employed, which involved traversing each 
-subfolder in the GarbageDataset class and collecting the paths 
-for all images along with their corresponding class labels. 
+This dataset was chosen because of the large number of images 
+it provides for the model, and since the dataset contains 
+different types of garbage in folders, which allows the 
+model to get trained on the different types of waste. The 
+dataset is separated into cardboard, glass, metal, paper, 
+plastic and trash. Several preprocessing operations were 
+employed, which involved traversing each subfolder in the 
+GarbageDataset class and collecting the paths for all images 
+along with their corresponding class labels. 
 
 A list of tuples was created to store the path and label 
 for all images that had a valid image format of jpg, jpeg 
 or png, and the images were all loaded in RGB format. 
+This ensures that all images has three color channels even 
+if the original images are in a different format, which is 
+important because the Convolutional Neural Network expects 
+a constant number of channels. If the channel dimensions 
+are inconsistent, the training will be prone to error. 
+
 Using PyTorch's torchvision library, the transforms module 
 resized the images to 224 by 224, which is ideal for 
-image processing for the neural network while also 
-maintaining image quality. 
+image processing for the Convolutional Neural Network while 
+also maintaining image quality. The transforms module also 
+converted the images to a tensor, which normalizes the images 
+to a [0.0, 1.0] range. This ensures that the gradient 
+computation is stable, since larger pixel values will be 
+normalized. This also converts the images from the height, 
+width, channel format to a channel, height, width format, 
+since this format is more ideal for the Convolutional Neural 
+Network. 
 
-The transforms module also converted the images to a 
-tensor, which normalizes the images to a [0.0, 1.0] 
-range. One percent of the dataset is then used using 
-an 80 percent training and 20 percent testing split, 
-since one percent of the dataset is sufficient. The 
-dataset was already annotated since the folders included 
-the garbage type, so matching the images to their class 
-label did not require any manual annotation. Each garbage 
-type was assigned to an integer value, which was mapped 
-to each image path.
+Thirty percent of the dataset is then chosen using random 
+sampling, since thirty percent of the dataset is sufficient. 
+Random sampling is used to ensure that all garbage categories 
+are equally represented for training. An 80 percent training 
+and 20 percent testing split was used to evaluate the model, 
+and stratification is applied to ensure that the same class 
+distribution is used for both the training and testing datasets. 
+
+Finally, data loaders are created for the training and testing 
+datasets to allow for efficient image processing and loading, 
+with batch sizes of 32 and with the training dataset being 
+randomized for each epoch. The dataset was already annotated since 
+the folders included the garbage type, so matching the images to 
+their class label did not require any manual annotation. Each 
+garbage type was assigned to an integer value, which was mapped 
+to each image path. Since the image label can be easily converted 
+to an integer value, additional annotation was not required.
 
 \section{Features}
 The dataset used in this project consists of labeled 
@@ -235,23 +257,51 @@ The implementation uses PyTorch 2.9.0 and is designed for easy extension to GPU 
 
 The dataset was divided using an 80/20 split, with 80 percent 
 being used for training and 20 percent being used for 
-testing. One percent of the dataset was used, and the model 
-was trained for 15 epochs using cross-entropy loss to determine 
+testing. Thirty percent of the dataset was used, and the model 
+was trained for 30 epochs using cross-entropy loss to determine 
 the difference between the predicted class and the true label. 
+Here is a simplified version of the cross-entropy loss function used 
+by PyTorch:
+\[
+L = -\sum_{i=1}^{C} y_i \log(softmax(x_i))
+\]
+The cross-entropy loss function used by PyTorch implements a 
+softmax function for the predicted class, and then multiplies 
+the value by the true label for the class using the true label 
+vector. An Adam optimizer was used with a learning rate of 0.001, 
+which is an algorithm that works similarly to stochastic gradient 
+descent and updates the weights of the model using a dynamic 
+learning rate. The algorithm starts with a learning rate of 0.001, 
+but uses different learning rates as the algorithm determines what 
+the ideal learning rate is. Due to the size of the dataset and 
+the simplicity of the model, the runtime to train and test the 
+model was long. 
 
 Using this methodology, the training loss for the first epoch 
-was 1.57, and the accuracy was 57.03 percent. The testing loss 
-was 0.22 for the first epoch, and the accuracy was 100 percent. 
-However, in the second epoch and afterwards, the training loss 
-and testing loss are 0, and the training and testing accuracy 
-are 100 percent. 
+was 1.25839, and the accuracy was 52.17 percent. The testing loss 
+was 1.18205 for the first epoch, and the accuracy was 54.86 percent. 
+This demonstrated that the model in the first epoch worked fairly 
+well at determining the garbage type, but there was still a lot of 
+room for improvement. 
 
-Although this demonstrates that the model is able to classify 
-the waste properly, this also demonstrates that the model is 
-overfitting to the dataset. The baseline is the neural network 
-trained on the garbage dataset, which should be adjusted to 
-account for overfitting, and the baseline performance is 100 
-percent, which is high due to overfitting.  
+As we continued to train the model and as the number of epochs 
+increased, the training and testing loss decreased, and the 
+training and testing accuracy increased. This demonstrated that 
+the model was improving at classifying garbage and was not overfitting 
+to the dataset. This is because the increase in accuracy was steady, 
+and the accuracy values were reasonable. By epoch 30, the training 
+loss was 0.69006, and the training accuracy was 75.65 percent. The 
+testing loss was 0.92142, and the testing accuracy was 70.60 percent.
+
+This demonstrates that the model is able to classify the waste 
+fairly accurately, but also demonstrates that the model can still 
+improve. This is because the model will fail to classify images 
+approximately 30 percent of the time. This model is a great baseline 
+for future models, since small changes can be made to this model to 
+improve its accuracy, such as adjusting the architecture and changing 
+the hyperparameters. Using the baseline accuracy of 70 percent, we can 
+also try different architectures and choose to implement architectures 
+that surpass the 70 percent accuracy threshold.  
 
 \section{Feedback and Plans}
 
@@ -268,6 +318,7 @@ incorporate them into our own model.
 
 Yousef Shahin: Completed section 2, 5, references, and created the initial model
 
+Aswin Kuganesan: Complete sections 3, 6, citations and equations
 % Bibliography entries for the entire Anthology, followed by custom entries
 %\bibliography{custom,anthology-overleaf-1,anthology-overleaf-2}
 
