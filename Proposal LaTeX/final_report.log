@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.22)  4 DEC 2025 21:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.22)  4 DEC 2025 22:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -531,12 +531,12 @@ Underfull \hbox (badness 3386) in paragraph at lines 157--158
 
 [4]
 
-<loss_epochs_fig.png, id=76, 425.1885pt x 250.536pt>
+<loss_epochs_fig.png, id=84, 425.1885pt x 250.536pt>
 File: loss_epochs_fig.png Graphic file (type png)
 <use loss_epochs_fig.png>
 Package pdftex.def Info: loss_epochs_fig.png  used on input line 181.
 (pdftex.def)             Requested size: 204.85846pt x 120.71082pt.
-<confusion_matrix.png, id=78, 357.13425pt x 317.38576pt>
+<confusion_matrix.png, id=86, 357.13425pt x 317.38576pt>
 File: confusion_matrix.png Graphic file (type png)
 <use confusion_matrix.png>
 Package pdftex.def Info: confusion_matrix.png  used on input line 189.
@@ -547,7 +547,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 [5 <./loss_epochs_fig.png>]
-<epochs_fig.png, id=85, 425.79076pt x 251.7405pt>
+<epochs_fig.png, id=93, 425.79076pt x 251.7405pt>
 File: epochs_fig.png Graphic file (type png)
 <use epochs_fig.png>
 Package pdftex.def Info: epochs_fig.png  used on input line 198.
@@ -557,7 +557,7 @@ Package pdftex.def Info: epochs_fig.png  used on input line 198.
 
 
 [6 <./confusion_matrix.png> <./epochs_fig.png>]
-<conv_layer.png, id=94, 260.77425pt x 142.73325pt>
+<conv_layer.png, id=102, 260.77425pt x 142.73325pt>
 File: conv_layer.png Graphic file (type png)
 <use conv_layer.png>
 Package pdftex.def Info: conv_layer.png  used on input line 232.
@@ -565,7 +565,22 @@ Package pdftex.def Info: conv_layer.png  used on input line 232.
  (./final_report.bbl
 
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 28.
+(Font)              scaled to size 10.0pt on input line 22.
+
+Underfull \hbox (badness 2073) in paragraph at lines 20--23
+[]\T1/ptm/m/n/10 (+20) Leonardo Co-fone. 2025.  Garbage clas-si-fi-ca-tion
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 20--23
+\T1/ptm/m/n/10 (+20) dataset.  [][]$\T1/zi4/m/n/10 https : / / www . kaggle . com / datasets /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+\T1/zi4/m/n/10 zlatan599 / garbage-[]dataset-[]classification /
+ []
+
 )
 
 [7 <./conv_layer.png>] (./final_report.aux)
@@ -577,18 +592,18 @@ Package rerunfilecheck Info: File `final_report.out' has not changed.
 (rerunfilecheck)             Checksum: 6FE19EF0C3C6BB5B022581317B40BCBC;669.
  ) 
 Here is how much of TeX's memory you used:
- 15291 strings out of 467797
- 239719 string characters out of 5435982
- 694292 words of memory out of 5000000
- 43502 multiletter control sequences out of 15000+600000
- 665461 words of font info for 222 fonts, out of 8000000 for 9000
+ 15314 strings out of 467797
+ 240083 string characters out of 5435982
+ 694369 words of memory out of 5000000
+ 43510 multiletter control sequences out of 15000+600000
+ 669050 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,10n,93p,2271b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on final_report.pdf (7 pages, 264866 bytes).
+Output written on final_report.pdf (7 pages, 267409 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 33869 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 37965 words of extra memory for PDF output out of 42996 (max. 10000000)
 

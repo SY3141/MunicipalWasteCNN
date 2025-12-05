@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Alqahtani et~al.(2022)Alqahtani, Hossain, and Muhammad}]{alqahtani2022}
@@ -15,6 +15,16 @@ O.~Awe, S.~Mengistu, and C.~Ezema. 2020.
 R.~Kumar, A.~Singh, and P.~Verma. 2021.
 \newblock Lightweight cnn model for real-time waste classification on edge devices.
 \newblock \emph{IEEE Internet of Things Journal}, 8(14):11572--11580.
+
+\bibitem[{{Leonardo Cofone}(2025)}]{kaggle_garbage2025}
+{Leonardo Cofone}. 2025.
+\newblock Garbage classification dataset.
+\newblock \url{https://www.kaggle.com/datasets/zlatan599/garbage-dataset-classification/code}.
+
+\bibitem[{Shorten and Khoshgoftaar(2019)}]{shorten2019survey}
+Connor Shorten and Taghi~M. Khoshgoftaar. 2019.
+\newblock A survey on image data augmentation for deep learning.
+\newblock \emph{Journal of Big Data}, 6(1):60.
 
 \bibitem[{Wang et~al.(2019)Wang, Zhang, and Li}]{wang2019}
 W.~Wang, Y.~Zhang, and X.~Li. 2019.
