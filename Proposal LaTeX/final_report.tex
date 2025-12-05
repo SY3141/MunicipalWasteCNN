@@ -283,24 +283,32 @@ the hyperparameters. Using the baseline accuracy of 70 percent, we can
 also try different architectures and choose to implement architectures 
 that surpass the 70 percent accuracy threshold.  
 
-\section{Feedback and Plans}
+\section{Error Analysis}
 
-For the remainder of the project, our primary focus will 
-be on improving the accuracy, robustness, and 
-generalization ability of our CNN-based waste 
-classification model. Based on the TA's feedback, we 
-will enhance our report by including a framework graph 
-of the CNN architecture to better illustrate our model 
-design. Additionally, we plan to perform feature 
-visualizations to analyze what the CNN has learned and 
-determine whether it is capturing meaningful patterns 
-from the input data. We will also expand our experimental 
-results by including metrics such as training and 
-validation loss, accuracy curves, and other performance 
-comparisons. Furthermore, we will explore other CNN-based 
-models to study their techniques and determine if any can 
-be incorporated into our approach.
+A thorough review of the model's mistakes involved quantitative tools 
+such as confusion matrices and per class accuracy, along with qualitative 
+checks that included visualizing intermediate CNN layers to see which features 
+the network relied on when sorting municipal waste into six categories. These 
+visualizations helped us identify when the model focused too much on background 
+patterns or irrelevant textures, which signaled overfitting and guided how 
+we tuned dropout and other hyperparameters. The model generally performed 
+well on categories with strong visual cues, such as metal or glass, while 
+struggling with classes that looked similar in color or texture, such as 
+certain plastics and paper items. Comparing different model versions showed 
+clear shifts in what errors decreased after architectural changes or 
+regularization adjustments. Common error patterns included confusion among 
+items with similar shapes and high confidence on ambiguous samples. Future 
+improvements could involve more targeted data collection, stronger augmentation, 
+class balancing, or model components that better highlight material specific features.
 
+We also used a McMaster server to run parallel grid searches over batches of 
+hyperparameters to speed up experimentation and improve both accuracy and convergence. 
+Running these searches in parallel let us evaluate many combinations of learning 
+rates, dropout values, batch sizes, and optimizer settings without long wait times. 
+This setup made it easier to spot trends in what configurations produced faster 
+training, more stable losses, or better validation accuracy. It also helped confirm 
+when certain tuning choices, such as increased regularization or adjusted learning 
+rate schedules, consistently reduced overfitting across multiple runs.
 
 \section*{Team Contributions}
 
@@ -308,8 +316,8 @@ Yousef Shahin: Completed section 3, and 4 (Features and Inputs, and Implementati
 
 Aswin Kuganesan: Complete sections 3, 6, citations and equations
 
-Sunny Yao: Completed sections 1, 4, 7, created the confusion matrix generalization
-and randomized sampling.
+Sunny Yao: Completed sections Introduction, Progress and Error Analysis. Created the confusion matrix generation
+and randomized sampling and CNN feature visualizations.
 
 % Bibliography entries for the entire Anthology, followed by custom entries
 %\bibliography{custom,anthology-overleaf-1,anthology-overleaf-2}
