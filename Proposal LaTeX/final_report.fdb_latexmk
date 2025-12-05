@@ -2,12 +2,12 @@
 ["bibtex final_report"] 0 "final_report.aux" "final_report.bbl" "final_report" 0 -1
   "./acl_natbib.bst" 1762646304 45186 3d1af46d62cc9172ef6e42b56c1cd613 ""
   "./custom.bib" 1762887966 1586 8eeb543f74c72d49f4c186c5c2b7ce6f ""
-  "final_report.aux" 1764897251 2021 d5214ef79dfb8aa9012575dfe5b29e1c "pdflatex"
+  "final_report.aux" 1764897351 2345 14c2ff16f31bb39163c2a5f3cd5320b4 "pdflatex"
   (generated)
   "final_report.bbl"
   "final_report.blg"
   (rewritten before read)
-["pdflatex"] 1764897250.77342 "c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/MunicipalWasteCNN/Proposal LaTeX/final_report.tex" "final_report.pdf" "final_report" 1764897253.09964 2
+["pdflatex"] 1764897349.7245 "c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/MunicipalWasteCNN/Proposal LaTeX/final_report.tex" "final_report.pdf" "final_report" 1764897352.01924 2
   "C:/Users/sunny/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1763077814 96176 40a8022d15c5925d7081b1ad66e03248 ""
   "C:/Users/sunny/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758150870 24225046 44b851538e2a3c6ae8d277662697c740 ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -113,13 +113,14 @@
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/sunny/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "acl.sty" 1762646304 11615 e2c027f483aa40e577ed34264c8b0655 ""
-  "c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/MunicipalWasteCNN/Proposal LaTeX/final_report.tex" 1764897249 27183 0b337da57b7a16f4210cc0788c9cdf3d ""
+  "c:/Users/sunny/OneDrive/OneDrive Desktop/Year4/4AL3/MunicipalWasteCNN/Proposal LaTeX/final_report.tex" 1764897345 27448 db81f1304f6ccf4dc79a3542bf893276 ""
   "confusion_matrix.png" 1764896536 30268 39251f678837a3ce65cc161fc5e246c7 ""
+  "conv_layer.png" 1764896676 32616 abfccb106eca3b1afac4cbe1b135a125 ""
   "epochs_fig.png" 1764896500 28025 e0e6d4c30b2b4e83c9362649cce0c3b9 ""
-  "final_report.aux" 1764897251 2021 d5214ef79dfb8aa9012575dfe5b29e1c "pdflatex"
+  "final_report.aux" 1764897351 2345 14c2ff16f31bb39163c2a5f3cd5320b4 "pdflatex"
   "final_report.bbl" 1764896021 0 d41d8cd98f00b204e9800998ecf8427e "bibtex final_report"
-  "final_report.out" 1764897251 758 7edd24d9e81633b978835d359d83137f "pdflatex"
-  "final_report.tex" 1764897249 27183 0b337da57b7a16f4210cc0788c9cdf3d ""
+  "final_report.out" 1764897351 758 7edd24d9e81633b978835d359d83137f "pdflatex"
+  "final_report.tex" 1764897345 27448 db81f1304f6ccf4dc79a3542bf893276 ""
   "loss_epochs_fig.png" 1764896583 28114 e4e54e29c149f91428c6f97d57fda6b8 ""
   (generated)
   "final_report.aux"

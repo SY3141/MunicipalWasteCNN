@@ -301,6 +301,13 @@ items with similar shapes and high confidence on ambiguous samples. Future
 improvements could involve more targeted data collection, stronger augmentation, 
 class balancing, or model components that better highlight material specific features.
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{conv_layer.png}
+    \caption{Example convolutional layer activation visualization for glass category}
+    \label{fig:conv_layer_figure} %label for referencing in text
+\end{figure}
+
 We also used a McMaster server to run parallel grid searches over batches of 
 hyperparameters to speed up experimentation and improve both accuracy and convergence. 
 Running these searches in parallel let us evaluate many combinations of learning 

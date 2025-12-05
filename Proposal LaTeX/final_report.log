@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.17)  4 DEC 2025 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.17)  4 DEC 2025 20:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -543,13 +543,17 @@ File: epochs_fig.png Graphic file (type png)
 <use epochs_fig.png>
 Package pdftex.def Info: epochs_fig.png  used on input line 272.
 (pdftex.def)             Requested size: 204.85846pt x 121.1183pt.
-[5 <./loss_epochs_fig.png> <./confusion_matrix.png> <./epochs_fig.png>] (final_report.bbl)
+[5 <./loss_epochs_fig.png> <./confusion_matrix.png> <./epochs_fig.png>]
+<conv_layer.png, id=51, 260.77425pt x 142.73325pt>
+File: conv_layer.png Graphic file (type png)
+<use conv_layer.png>
+Package pdftex.def Info: conv_layer.png  used on input line 306.
+(pdftex.def)             Requested size: 204.85846pt x 112.13077pt.
+ (final_report.bbl)
 
 Package natbib Warning: There were undefined citations.
 
-[6
-
-] (final_report.aux)
+[6 <./conv_layer.png>] (final_report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -568,17 +572,17 @@ Package rerunfilecheck Info: Checksums for `final_report.out':
 (rerunfilecheck)             After:  7EDD24D9E81633B978835D359D83137F;758.
  ) 
 Here is how much of TeX's memory you used:
- 13900 strings out of 474486
- 226736 string characters out of 5743755
+ 13912 strings out of 474486
+ 226948 string characters out of 5743755
  1943542 words of memory out of 5000000
- 35834 multiletter control sequences out of 15000+600000
- 586574 words of font info for 169 fonts, out of 8000000 for 9000
+ 35842 multiletter control sequences out of 15000+600000
+ 586704 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,10n,93p,1433b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/sunny/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on final_report.pdf (6 pages, 223510 bytes).
+Output written on final_report.pdf (6 pages, 257761 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 27664 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 108 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 27669 words of extra memory for PDF output out of 29859 (max. 10000000)
 
