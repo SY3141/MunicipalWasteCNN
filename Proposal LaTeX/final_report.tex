@@ -130,55 +130,14 @@ Our approach builds upon these foundational works by implementing a custom CNN a
 
 \section{Dataset}
 
-The dataset used is the Garbage Images Dataset from Kaggle. 
-This dataset was chosen because of the large number of images 
-it provides for the model, and since the dataset contains 
-different types of garbage in folders, which allows the 
-model to get trained on the different types of waste. The 
-dataset is separated into cardboard, glass, metal, paper, 
-plastic and trash. Several preprocessing operations were 
-employed, which involved traversing each subfolder in the 
-GarbageDataset class and collecting the paths for all images 
-along with their corresponding class labels. 
+TWe used the garbage classification dataset from Kaggle and downloaded it to set up the dataset. This dataset was chosen because it had a large number of images and had clearly separated folders for each class (garbage category), which meant that the data did not need to be manually annotated. Furthermore, this meant that there was no human error since the annotation was not done manually by us. Since there was a large amount of data for each category, this meant that there was equal representation for each class. Therefore, we did not need to do any preprocessing or adjust the model to account for any class imbalances. The dataset is organized into 6 classes: cardboard, metal, paper, glass, plastic, and trash. 
 
-A list of tuples was created to store the path and label 
-for all images that had a valid image format of jpg, jpeg 
-or png, and the images were all loaded in RGB format. 
-This ensures that all images has three color channels even 
-if the original images are in a different format, which is 
-important because the Convolutional Neural Network expects 
-a constant number of channels. If the channel dimensions 
-are inconsistent, the training will be prone to error. 
+We created a GarbageDataset class that first looks inside the dataset directory and finds all the folders which are named after the 6 classes. Then, it maps the classes from numbers 0 to 5 so that each class can be represented as a number. It traverses through each of the folders and traverses every image to check if they are in JPG, PNG or JPEG format. If the image is in the correct format, it will add the image to a list of images. This list contains all the image paths and the labels of all of the images. This list is used by the model as the dataset, since it contains the image path, so it can access the image, and its corresponding label, so the model knows what class the image belongs to. This class can return the number of images in the dataset through \text{\_\_len\_\_}. It can also provide any image in the dataset with its corresponding label through \text{\_\_getitem\_\_} if given an index as a parameter. The image gets converted to RGB, which ensures that all images have three colour channels, even if the original images are in a different format, which is important because the Convolutional Neural Network expects a constant number of channels. If the channel dimensions are inconsistent, the training will be prone to error. Furthermore, the image can be transformed (resizing, normalization, or augmentation) if the GarbageDataset class is instantiated with a transform defined. 
 
-Using PyTorch's torchvision library, the transforms module 
-resized the images to 224 by 224, which is ideal for 
-image processing for the Convolutional Neural Network while 
-also maintaining image quality. The transforms module also 
-converted the images to a tensor, which normalizes the images 
-to a [0.0, 1.0] range. This ensures that the gradient 
-computation is stable, since larger pixel values will be 
-normalized. This also converts the images from the height, 
-width, channel format to a channel, height, width format, 
-since this format is more ideal for the Convolutional Neural 
-Network. 
+The preprocessing operations performed on the dataset are done using PyTorch’s transforms module. The training images are resized randomly and cropped to 224x224 pixels, and the images were augmented through random horizontal flipping to improve generalization. The images were then converted to tensors for the model to process them properly. Finally, the images are normalized using the mean and standard deviation of a pretrained model to stabilize gradient updates and reduce variation in pixel range through standardization. The training images also undergo image processing by cropping the images to 224x244 pixels. Furthermore, the images are converted to tensors and normalized.
 
-Thirty percent of the dataset is then chosen using random 
-sampling, since thirty percent of the dataset is sufficient. 
-Random sampling is used to ensure that all garbage categories 
-are equally represented for training. An 80 percent training 
-and 20 percent testing split was used to evaluate the model, 
-and stratification is applied to ensure that the same class 
-distribution is used for both the training and testing datasets. 
+Our previous model only used thirty percent of our dataset, which led to a lower accuracy during training. The model is expected to be more accurate with more data available, since it can determine more patterns and similarities between images of the same class if it has more data to train on. Therefore, we used the entire dataset for this model, which is expected to increase the accuracy and runtime of our model per epoch. An 80 percent training and 20 percent testing split was used to evaluate the model, and stratification is applied to ensure that the same class distribution is used for both the training and testing datasets. Finally, data loaders are created for the training and testing datasets to allow for efficient image processing and loading, with batch sizes of 32 and with the training dataset being randomized for each epoch. This improved learning robustness since it ensured that the model was learning after each epoch and that the accuracy of the model was not dependent on the training dataset.
 
-Finally, data loaders are created for the training and testing 
-datasets to allow for efficient image processing and loading, 
-with batch sizes of 32 and with the training dataset being 
-randomized for each epoch. The dataset was already annotated since 
-the folders included the garbage type, so matching the images to 
-their class label did not require any manual annotation. Each 
-garbage type was assigned to an integer value, which was mapped 
-to each image path. Since the image label can be easily converted 
-to an integer value, additional annotation was not required.
 
 \section{Features}
 
@@ -214,29 +173,9 @@ We also varied the input-side augmentation intensity, experimenting with heavier
 
 
 
-\section{Results and Evaluation}
+\section{Evaluation}
 
-The dataset was divided using an 80/20 split, with 80 percent 
-being used for training and 20 percent being used for 
-testing. Thirty percent of the dataset was used, and the model 
-was trained for 30 epochs using cross-entropy loss to determine 
-the difference between the predicted class and the true label. 
-Here is a simplified version of the cross-entropy loss function used 
-by PyTorch:
-\[
-L = -\sum_{i=1}^{C} y_i \log(softmax(x_i))
-\]
-The cross-entropy loss function used by PyTorch implements a 
-softmax function for the predicted class, and then multiplies 
-the value by the true label for the class using the true label 
-vector. An Adam optimizer was used with a learning rate of 0.001, 
-which is an algorithm that works similarly to stochastic gradient 
-descent and updates the weights of the model using a dynamic 
-learning rate. The algorithm starts with a learning rate of 0.001, 
-but uses different learning rates as the algorithm determines what 
-the ideal learning rate is. Due to the size of the dataset and 
-the simplicity of the model, the runtime to train and test the 
-model was long. 
+The dataset was divided using an 80/20 split, with 80 percent being used for training and 20 percent being used for testing. This split was optimal because a higher percentage of testing data would result in the model being less accurate due to less data being used for training, and a lower percentage of testing data would result in overfitting because the testing dataset would not be representative of the data. The entire dataset was used instead of 30 percent to increase testing accuracy and reduce overfitting. The model was trained for 45 epochs using cross-entropy loss to determine the difference between the predicted class and the true label. We increased the number of epochs from 30 to 45 because increasing the number of epochs would increase the model’s accuracy, since the model will be able to accurately classify the images more often if it trains for a longer amount of time. We noticed that the model was not overfitting after 30 epochs, since the training accuracy and testing accuracy were similar, so training the model for a longer period of time would increase the training accuracy, which would lead to a higher testing accuracy. We found that the metrics from the progress report stage were adequate since they provided accurate results and were useful when tuning hyperparameters. The cross-entropy loss function used by PyTorch implements a softmax function for the predicted class and then multiplies the value by the true label for the class using the true label vector. An Adam optimizer was used with a learning rate of 0.001, which is an algorithm that works similarly to stochastic gradient descent and updates the weights of the model using a dynamic learning rate. The algorithm starts with a learning rate of 0.001 but uses different learning rates as the algorithm determines what the ideal learning rate is. We did not change the learning rate because we noticed that it was high enough for the model to learn after 45 epochs, and the model was not overfitting, which meant that we did not need to increase the learning rate. Due to the size of the dataset and the simplicity of the model, the runtime to train and test the model was long.
 
 \begin{figure}[h!]
     \centering
@@ -245,12 +184,7 @@ model was long.
     \label{fig:loss_figure} %label for referencing in text
 \end{figure}
 
-Using this methodology, the training loss for the first epoch 
-was 1.25839, and the accuracy was 52.17 percent. The testing loss 
-was 1.18205 for the first epoch, and the accuracy was 54.86 percent. 
-This demonstrated that the model in the first epoch worked fairly 
-well at determining the garbage type, but there was still a lot of 
-room for improvement. 
+Using this methodology, the training loss for the first epoch was 1.65212, and the accuracy was 32.33 percent. This is a worse performance than our previous model for the first epoch, which had a training loss of 1.25839 and an accuracy of 52.17 percent. The testing loss for the first epoch was 1.51110, and the test accuracy was 41.60 percent, in comparison to the older model, which had a testing loss of 1.18205 for the first epoch and an accuracy of 54.86 percent. The data augmentation most likely led to the model being less accurate during earlier epochs. This demonstrated that the model in the first epoch performed poorly at determining the garbage type and that there was still a lot of room for improvement.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.45\textwidth]{confusion_matrix.png}
@@ -258,14 +192,7 @@ room for improvement.
     \label{fig:confusion_figure} %label for referencing in text
 \end{figure}
 
-As we continued to train the model and as the number of epochs 
-increased, the training and testing loss decreased, and the 
-training and testing accuracy increased. This demonstrated that 
-the model was improving at classifying garbage and was not overfitting 
-to the dataset. This is because the increase in accuracy was steady, 
-and the accuracy values were reasonable. By epoch 30, the training 
-loss was 0.69006, and the training accuracy was 75.65 percent. The 
-testing loss was 0.92142, and the testing accuracy was 70.60 percent.
+As we continued to train the model and as the number of epochs increased, the training and testing loss decreased, and the training and testing accuracy increased. This demonstrated that the model was improving at classifying garbage and was not overfitting to the dataset. This is because the increase in accuracy was steady, and the accuracy values were reasonable. By epoch 30, the training loss was 0.46969, which is less than the 0.69006 training loss in the older model, and the training accuracy was 83.29 percent, which was higher than the 75.65 percent training accuracy in the older model. Furthermore, the testing loss was 0.67411, which is less than the 0.92142 testing loss in the older model, and the testing accuracy was 80.05, which is greater than the 70.60 percent test accuracy in the older model. 
 
 \begin{figure}[h!]
     \centering
@@ -274,14 +201,14 @@ testing loss was 0.92142, and the testing accuracy was 70.60 percent.
     \label{fig:accuracy_figure} %label for referencing in text
 \end{figure}
 
-This demonstrates that the model is able to classify the waste 
-fairly accurately, but also demonstrates that the model can still 
-improve. This is because the model will fail to classify images 
-approximately 30 percent of the time. This model is a great baseline 
-for future models. Future changes can include adjusting the architecture and changing 
-the hyperparameters. Using the baseline accuracy of 70 percent, we can 
-also try different architectures and choose to implement architectures 
-that surpass the 70 percent accuracy threshold.  
+This demonstrates that the older model was able to classify the waste fairly accurately, but the newer model was more accurate due to the changes to the dataset and the model. The training accuracy of the model after the 45th epoch was 92.88 percent, and the training loss was 0.20466. The testing accuracy was 84.75 percent with a testing loss of 0.69462. This meant that the model failed to classify images approximately 15 percent of the time, which was a huge improvement in comparison to the old model, which failed to classify images approximately 30 percent of the time. Similar to the old model, this model is also a great baseline for future models. Using a different architecture may minimally improve the accuracy and reduce the runtime.
+
+\section{Progress}
+
+As we worked on this project, our model changed significantly as we refined our methodology based on the performance of the model. We initially looked into making large changes to our model, and looked into other models and how they perform with large datasets. However, we realized that the CNN is still a viable model to classify garbage, since it was an effective image processor due to its ability to learn relevant features easily on datasets with a low number of classes. The model is also able to work effectively with data augmentation, which is an important feature we needed to implement for our final model. We normalized our model on another model's pretrained mean and standard deviation since we noticed that our dataset was not normalized and could benefit from preprocessing. 
+
+We improved our preprocessing by implementing random crops and horizontal flips, which are commonly used data augmentation techniques. We used a \texttt{ReduceLROnPlateau} learning rate scheduler to adjust the learning rate when the model accuracy does not improve, which improved the testing accuracy. This demonstrated that we followed through with our plan to adjust our model. However, our plan did change course when we also experimented with adding a 4th convolutional block to make the network deeper, adding additional dropout layers, and including L2 regularization into our convolutional neural network. This is because we ended up not implementing these features as planned, since they did not improve the model’s accuracy and led to underfitting. 
+
 
 \section{Error Analysis}
 
@@ -321,7 +248,7 @@ rate schedules, consistently reduced overfitting across multiple runs.
 
 Yousef Shahin: Completed section 3, and 4 (Features and Inputs, and Implementation), created the model architecture and training pipeline, and participated in trainig the model and performing experiments.
 
-Aswin Kuganesan: Complete sections 3, 6, citations and equations
+Aswin Kuganesan: Completed Dataset, Evaluation, and Progress sections. Created data augmentation and tested different model architectures.
 
 Sunny Yao: Completed sections Introduction, Progress and Error Analysis. Created the confusion matrix generation
 and randomized sampling and CNN feature visualizations.
