@@ -6,7 +6,8 @@
 \usepackage{times}
 \usepackage{latexsym}
 \usepackage{graphicx}
-
+\usepackage{amsmath}  
+\usepackage{amssymb}   
 % For proper rendering and hyphenation of words containing Latin characters (including in bib files)
 \usepackage[T1]{fontenc}
 % For Vietnamese characters
@@ -128,7 +129,7 @@ Our approach builds upon these foundational works by implementing a custom CNN a
 
 \section{Dataset}
 
-TWe used the garbage classification dataset from Kaggle and downloaded it to set up the dataset. This dataset was chosen because it had a large number of images and had clearly separated folders for each class (garbage category), which meant that the data did not need to be manually annotated. Furthermore, this meant that there was no human error since the annotation was not done manually by us. Since there was a large amount of data for each category, this meant that there was equal representation for each class. Therefore, we did not need to do any preprocessing or adjust the model to account for any class imbalances. The dataset is organized into 6 classes: cardboard, metal, paper, glass, plastic, and trash. 
+We used the garbage classification dataset from Kaggle and downloaded it to set up the dataset. This dataset was chosen because it had a large number of images and had clearly separated folders for each class (garbage category), which meant that the data did not need to be manually annotated. Furthermore, this meant that there was no human error since the annotation was not done manually by us. Since there was a large amount of data for each category, this meant that there was equal representation for each class. Therefore, we did not need to do any preprocessing or adjust the model to account for any class imbalances. The dataset is organized into 6 classes: cardboard, metal, paper, glass, plastic, and trash. 
 
 We created a GarbageDataset class that first looks inside the dataset directory and finds all the folders which are named after the 6 classes. Then, it maps the classes from numbers 0 to 5 so that each class can be represented as a number. It traverses through each of the folders and traverses every image to check if they are in JPG, PNG or JPEG format. If the image is in the correct format, it will add the image to a list of images. This list contains all the image paths and the labels of all of the images. This list is used by the model as the dataset, since it contains the image path, so it can access the image, and its corresponding label, so the model knows what class the image belongs to. This class can return the number of images in the dataset through \texttt{\_\_len\_\_}. It can also provide any image in the dataset with its corresponding label through \texttt{\_\_getitem\_\_} if given an index as a parameter. The image gets converted to RGB, which ensures that all images have three colour channels, even if the original images are in a different format, which is important because the Convolutional Neural Network expects a constant number of channels. If the channel dimensions are inconsistent, the training will be prone to error. Furthermore, the image can be transformed (resizing, normalization, or augmentation) if the GarbageDataset class is instantiated with a transform defined. 
 
@@ -186,7 +187,7 @@ Using this methodology, the training loss for the first epoch was 1.65212, and t
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.45\textwidth]{confusion_matrix.png}
-    \caption{Confusion matrix for the model with 5 categories of waste}
+    \caption{Confusion matrix for the model with 6 categories of waste}
     \label{fig:confusion_figure} %label for referencing in text
 \end{figure}
 
