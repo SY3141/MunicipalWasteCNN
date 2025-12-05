@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex final_report"] 1764904033.6196 "final_report.aux" "final_report.bbl" "final_report" 1764904040.25801 0
+["bibtex final_report"] 1764904033.6196 "final_report.aux" "final_report.bbl" "final_report" 1764905201.57874 0
   "./acl_natbib.bst" 1762792016 47126 3d1af46d62cc9172ef6e42b56c1cd613 ""
   "./custom.bib" 1764904031 2155 b9ef558ee17426c84cb71376cfba7f20 ""
-  "final_report.aux" 1764904037 2878 880139d35110cf70ddab8f6094716e95 "pdflatex"
+  "final_report.aux" 1764905198 2878 880139d35110cf70ddab8f6094716e95 "pdflatex"
   (generated)
   "final_report.bbl"
   "final_report.blg"
   (rewritten before read)
-["pdflatex"] 1764904034.76926 "c:/Users/aswin/MunicipalWasteCNN/Proposal LaTeX/final_report.tex" "final_report.pdf" "final_report" 1764904040.25969 0
+["pdflatex"] 1764905195.51492 "c:/Users/aswin/MunicipalWasteCNN/Proposal LaTeX/final_report.tex" "final_report.pdf" "final_report" 1764905201.58088 0
   "acl.sty" 1762792016 11927 e2c027f483aa40e577ed34264c8b0655 ""
-  "c:/Users/aswin/MunicipalWasteCNN/Proposal LaTeX/final_report.tex" 1764903901 32203 70b9ab8a44984810c0e180a78ec9f361 ""
+  "c:/Users/aswin/MunicipalWasteCNN/Proposal LaTeX/final_report.tex" 1764905193 32200 bbf00424ef47c7cdd3e9b6df3267573a ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1758579191 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc" 1758580817 7631 5169ff1acd97ff1c4ab83563c99f96f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1758580081 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -141,10 +141,10 @@
   "confusion_matrix.png" 1764897568 30268 39251f678837a3ce65cc161fc5e246c7 ""
   "conv_layer.png" 1764897568 32616 abfccb106eca3b1afac4cbe1b135a125 ""
   "epochs_fig.png" 1764897568 28025 e0e6d4c30b2b4e83c9362649cce0c3b9 ""
-  "final_report.aux" 1764904037 2878 880139d35110cf70ddab8f6094716e95 "pdflatex"
+  "final_report.aux" 1764905198 2878 880139d35110cf70ddab8f6094716e95 "pdflatex"
   "final_report.bbl" 1764904034 1844 78104264b5156697191918d36af84488 "bibtex final_report"
-  "final_report.out" 1764904037 669 6fe19ef0c3c6bb5b022581317b40bcbc "pdflatex"
-  "final_report.tex" 1764903901 32203 70b9ab8a44984810c0e180a78ec9f361 ""
+  "final_report.out" 1764905198 669 6fe19ef0c3c6bb5b022581317b40bcbc "pdflatex"
+  "final_report.tex" 1764905193 32200 bbf00424ef47c7cdd3e9b6df3267573a ""
   "loss_epochs_fig.png" 1764897568 28114 e4e54e29c149f91428c6f97d57fda6b8 ""
   (generated)
   "final_report.aux"
